@@ -10,7 +10,7 @@ A simple RTMP stream client for iOS
 
 * [openssl](https://www.openssl.org/)
 
-* [AVCam: Building a Camera App]()
+* [AVCam: Building a Camera App](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app?language=objc)
 
 * [iOS AACEncoder](https://github.com/chrisballinger/FFmpeg-iOS-Encoder/blob/master/FFmpegEncoder/AACEncoder.m)
 
