@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE06FF9123092E1A00446B44 /* AKEVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BE06FF9023092E1A00446B44 /* AKEVideoEncoder.m */; };
+		BE06FF94230939F700446B44 /* AKERTMPSender.m in Sources */ = {isa = PBXBuildFile; fileRef = BE06FF93230939F700446B44 /* AKERTMPSender.m */; };
+		BE0A6CAC2312926E005E9251 /* AKETimestampManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0A6CAB2312926E005E9251 /* AKETimestampManager.m */; };
+		BE44BC2D230A4C750084B044 /* AKEData.m in Sources */ = {isa = PBXBuildFile; fileRef = BE44BC2C230A4C750084B044 /* AKEData.m */; };
+		BE459D1F230A86CB003D0D76 /* AKEAVPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = BE459D1E230A86CB003D0D76 /* AKEAVPacket.m */; };
+		BE459D22230A88B0003D0D76 /* AKEAVQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE459D21230A88B0003D0D76 /* AKEAVQueue.m */; };
+		BE459D25230B8EC5003D0D76 /* AKEAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BE459D24230B8EC5003D0D76 /* AKEAudioEncoder.m */; };
+		BE459D28230B982C003D0D76 /* AKEAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BE459D27230B982C003D0D76 /* AKEAudioCapture.m */; };
+		BE66E4A622BE758C00FD57D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4A522BE758C00FD57D0 /* AppDelegate.m */; };
+		BE66E4A922BE758C00FD57D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4A822BE758C00FD57D0 /* ViewController.m */; };
+		BE66E4AC22BE758C00FD57D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE66E4AA22BE758C00FD57D0 /* Main.storyboard */; };
+		BE66E4AE22BE758D00FD57D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE66E4AD22BE758D00FD57D0 /* Assets.xcassets */; };
+		BE66E4B122BE758D00FD57D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE66E4AF22BE758D00FD57D0 /* LaunchScreen.storyboard */; };
+		BE66E4B422BE758D00FD57D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4B322BE758D00FD57D0 /* main.m */; };
+		BE66E4BE22BE758D00FD57D0 /* AKE_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4BD22BE758D00FD57D0 /* AKE_Objective_CTests.m */; };
+		BE66E4C922BE758D00FD57D0 /* AKE_Objective_CUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4C822BE758D00FD57D0 /* AKE_Objective_CUITests.m */; };
+		BE66E4D822BE831D00FD57D0 /* AKEVideoCapure.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4D722BE831D00FD57D0 /* AKEVideoCapure.m */; };
+		BE66E4DB22BE843400FD57D0 /* AKEPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66E4DA22BE843400FD57D0 /* AKEPreviewView.m */; };
+		BE66E4DE22E32FD900FD57D0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66E4DD22E32FD900FD57D0 /* libcrypto.a */; };
+		BE66E4E222E3301100FD57D0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66E4E122E3301100FD57D0 /* libssl.a */; };
+		BE66E4E422E337AE00FD57D0 /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66E4E322E337AE00FD57D0 /* librtmp.a */; };
+		BE66E4E622E3445D00FD57D0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66E4E522E3445D00FD57D0 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE66E4BA22BE758D00FD57D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE66E49922BE758C00FD57D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE66E4A022BE758C00FD57D0;
+			remoteInfo = "AKE Objective-C";
+		};
+		BE66E4C522BE758D00FD57D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE66E49922BE758C00FD57D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE66E4A022BE758C00FD57D0;
+			remoteInfo = "AKE Objective-C";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE06FF8F23092E1A00446B44 /* AKEVideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEVideoEncoder.h; sourceTree = "<group>"; };
+		BE06FF9023092E1A00446B44 /* AKEVideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEVideoEncoder.m; sourceTree = "<group>"; };
+		BE06FF92230939F700446B44 /* AKERTMPSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKERTMPSender.h; sourceTree = "<group>"; };
+		BE06FF93230939F700446B44 /* AKERTMPSender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKERTMPSender.m; sourceTree = "<group>"; };
+		BE0A6CAA2312926E005E9251 /* AKETimestampManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKETimestampManager.h; sourceTree = "<group>"; };
+		BE0A6CAB2312926E005E9251 /* AKETimestampManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKETimestampManager.m; sourceTree = "<group>"; };
+		BE44BC2B230A4C750084B044 /* AKEData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEData.h; sourceTree = "<group>"; };
+		BE44BC2C230A4C750084B044 /* AKEData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEData.m; sourceTree = "<group>"; };
+		BE459D1D230A86CB003D0D76 /* AKEAVPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEAVPacket.h; sourceTree = "<group>"; };
+		BE459D1E230A86CB003D0D76 /* AKEAVPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEAVPacket.m; sourceTree = "<group>"; };
+		BE459D20230A88B0003D0D76 /* AKEAVQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEAVQueue.h; sourceTree = "<group>"; };
+		BE459D21230A88B0003D0D76 /* AKEAVQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEAVQueue.m; sourceTree = "<group>"; };
+		BE459D23230B8EC5003D0D76 /* AKEAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEAudioEncoder.h; sourceTree = "<group>"; };
+		BE459D24230B8EC5003D0D76 /* AKEAudioEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEAudioEncoder.m; sourceTree = "<group>"; };
+		BE459D26230B982C003D0D76 /* AKEAudioCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEAudioCapture.h; sourceTree = "<group>"; };
+		BE459D27230B982C003D0D76 /* AKEAudioCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEAudioCapture.m; sourceTree = "<group>"; };
+		BE66E4A122BE758C00FD57D0 /* AKE Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AKE Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE66E4A422BE758C00FD57D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE66E4A522BE758C00FD57D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE66E4A722BE758C00FD57D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE66E4A822BE758C00FD57D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE66E4AB22BE758C00FD57D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE66E4AD22BE758D00FD57D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE66E4B022BE758D00FD57D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE66E4B222BE758D00FD57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE66E4B322BE758D00FD57D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE66E4B922BE758D00FD57D0 /* AKE Objective-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AKE Objective-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE66E4BD22BE758D00FD57D0 /* AKE_Objective_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKE_Objective_CTests.m; sourceTree = "<group>"; };
+		BE66E4BF22BE758D00FD57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE66E4C422BE758D00FD57D0 /* AKE Objective-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AKE Objective-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE66E4C822BE758D00FD57D0 /* AKE_Objective_CUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKE_Objective_CUITests.m; sourceTree = "<group>"; };
+		BE66E4CA22BE758D00FD57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE66E4D622BE831D00FD57D0 /* AKEVideoCapure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEVideoCapure.h; sourceTree = "<group>"; };
+		BE66E4D722BE831D00FD57D0 /* AKEVideoCapure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEVideoCapure.m; sourceTree = "<group>"; };
+		BE66E4D922BE843400FD57D0 /* AKEPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKEPreviewView.h; sourceTree = "<group>"; };
+		BE66E4DA22BE843400FD57D0 /* AKEPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEPreviewView.m; sourceTree = "<group>"; };
+		BE66E4DD22E32FD900FD57D0 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../3rdparty/openssl/lib/libcrypto.a; sourceTree = "<group>"; };
+		BE66E4E122E3301100FD57D0 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../3rdparty/openssl/lib/libssl.a; sourceTree = "<group>"; };
+		BE66E4E322E337AE00FD57D0 /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtmp.a; path = ../3rdparty/librtmp/lib/librtmp.a; sourceTree = "<group>"; };
+		BE66E4E522E3445D00FD57D0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE66E49E22BE758C00FD57D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE66E4E622E3445D00FD57D0 /* libz.tbd in Frameworks */,
+				BE66E4E422E337AE00FD57D0 /* librtmp.a in Frameworks */,
+				BE66E4E222E3301100FD57D0 /* libssl.a in Frameworks */,
+				BE66E4DE22E32FD900FD57D0 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66E4B622BE758D00FD57D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66E4C122BE758D00FD57D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE66E49822BE758C00FD57D0 = {
+			isa = PBXGroup;
+			children = (
+				BE66E4A322BE758C00FD57D0 /* AKE Objective-C */,
+				BE66E4BC22BE758D00FD57D0 /* AKE Objective-CTests */,
+				BE66E4C722BE758D00FD57D0 /* AKE Objective-CUITests */,
+				BE66E4A222BE758C00FD57D0 /* Products */,
+				BE66E4DC22E32FD900FD57D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE66E4A222BE758C00FD57D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE66E4A122BE758C00FD57D0 /* AKE Objective-C.app */,
+				BE66E4B922BE758D00FD57D0 /* AKE Objective-CTests.xctest */,
+				BE66E4C422BE758D00FD57D0 /* AKE Objective-CUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE66E4A322BE758C00FD57D0 /* AKE Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				BE66E4A422BE758C00FD57D0 /* AppDelegate.h */,
+				BE66E4A522BE758C00FD57D0 /* AppDelegate.m */,
+				BE66E4A722BE758C00FD57D0 /* ViewController.h */,
+				BE66E4A822BE758C00FD57D0 /* ViewController.m */,
+				BE66E4AA22BE758C00FD57D0 /* Main.storyboard */,
+				BE66E4AD22BE758D00FD57D0 /* Assets.xcassets */,
+				BE66E4AF22BE758D00FD57D0 /* LaunchScreen.storyboard */,
+				BE66E4B222BE758D00FD57D0 /* Info.plist */,
+				BE66E4B322BE758D00FD57D0 /* main.m */,
+				BE66E4D622BE831D00FD57D0 /* AKEVideoCapure.h */,
+				BE66E4D722BE831D00FD57D0 /* AKEVideoCapure.m */,
+				BE66E4D922BE843400FD57D0 /* AKEPreviewView.h */,
+				BE66E4DA22BE843400FD57D0 /* AKEPreviewView.m */,
+				BE06FF8F23092E1A00446B44 /* AKEVideoEncoder.h */,
+				BE06FF9023092E1A00446B44 /* AKEVideoEncoder.m */,
+				BE06FF92230939F700446B44 /* AKERTMPSender.h */,
+				BE06FF93230939F700446B44 /* AKERTMPSender.m */,
+				BE44BC2B230A4C750084B044 /* AKEData.h */,
+				BE44BC2C230A4C750084B044 /* AKEData.m */,
+				BE459D1D230A86CB003D0D76 /* AKEAVPacket.h */,
+				BE459D1E230A86CB003D0D76 /* AKEAVPacket.m */,
+				BE459D20230A88B0003D0D76 /* AKEAVQueue.h */,
+				BE459D21230A88B0003D0D76 /* AKEAVQueue.m */,
+				BE459D26230B982C003D0D76 /* AKEAudioCapture.h */,
+				BE459D27230B982C003D0D76 /* AKEAudioCapture.m */,
+				BE459D23230B8EC5003D0D76 /* AKEAudioEncoder.h */,
+				BE459D24230B8EC5003D0D76 /* AKEAudioEncoder.m */,
+				BE0A6CAA2312926E005E9251 /* AKETimestampManager.h */,
+				BE0A6CAB2312926E005E9251 /* AKETimestampManager.m */,
+			);
+			path = "AKE Objective-C";
+			sourceTree = "<group>";
+		};
+		BE66E4BC22BE758D00FD57D0 /* AKE Objective-CTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE66E4BD22BE758D00FD57D0 /* AKE_Objective_CTests.m */,
+				BE66E4BF22BE758D00FD57D0 /* Info.plist */,
+			);
+			path = "AKE Objective-CTests";
+			sourceTree = "<group>";
+		};
+		BE66E4C722BE758D00FD57D0 /* AKE Objective-CUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE66E4C822BE758D00FD57D0 /* AKE_Objective_CUITests.m */,
+				BE66E4CA22BE758D00FD57D0 /* Info.plist */,
+			);
+			path = "AKE Objective-CUITests";
+			sourceTree = "<group>";
+		};
+		BE66E4DC22E32FD900FD57D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE66E4E522E3445D00FD57D0 /* libz.tbd */,
+				BE66E4E322E337AE00FD57D0 /* librtmp.a */,
+				BE66E4E122E3301100FD57D0 /* libssl.a */,
+				BE66E4DD22E32FD900FD57D0 /* libcrypto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE66E4A022BE758C00FD57D0 /* AKE Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE66E4CD22BE758D00FD57D0 /* Build configuration list for PBXNativeTarget "AKE Objective-C" */;
+			buildPhases = (
+				BE66E49D22BE758C00FD57D0 /* Sources */,
+				BE66E49E22BE758C00FD57D0 /* Frameworks */,
+				BE66E49F22BE758C00FD57D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKE Objective-C";
+			productName = "AKE Objective-C";
+			productReference = BE66E4A122BE758C00FD57D0 /* AKE Objective-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE66E4B822BE758D00FD57D0 /* AKE Objective-CTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE66E4D022BE758D00FD57D0 /* Build configuration list for PBXNativeTarget "AKE Objective-CTests" */;
+			buildPhases = (
+				BE66E4B522BE758D00FD57D0 /* Sources */,
+				BE66E4B622BE758D00FD57D0 /* Frameworks */,
+				BE66E4B722BE758D00FD57D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE66E4BB22BE758D00FD57D0 /* PBXTargetDependency */,
+			);
+			name = "AKE Objective-CTests";
+			productName = "AKE Objective-CTests";
+			productReference = BE66E4B922BE758D00FD57D0 /* AKE Objective-CTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE66E4C322BE758D00FD57D0 /* AKE Objective-CUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE66E4D322BE758D00FD57D0 /* Build configuration list for PBXNativeTarget "AKE Objective-CUITests" */;
+			buildPhases = (
+				BE66E4C022BE758D00FD57D0 /* Sources */,
+				BE66E4C122BE758D00FD57D0 /* Frameworks */,
+				BE66E4C222BE758D00FD57D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE66E4C622BE758D00FD57D0 /* PBXTargetDependency */,
+			);
+			name = "AKE Objective-CUITests";
+			productName = "AKE Objective-CUITests";
+			productReference = BE66E4C422BE758D00FD57D0 /* AKE Objective-CUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE66E49922BE758C00FD57D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AKE;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = akanchi;
+				TargetAttributes = {
+					BE66E4A022BE758C00FD57D0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					BE66E4B822BE758D00FD57D0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BE66E4A022BE758C00FD57D0;
+					};
+					BE66E4C322BE758D00FD57D0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BE66E4A022BE758C00FD57D0;
+					};
+				};
+			};
+			buildConfigurationList = BE66E49C22BE758C00FD57D0 /* Build configuration list for PBXProject "AKE Objective-C" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE66E49822BE758C00FD57D0;
+			productRefGroup = BE66E4A222BE758C00FD57D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE66E4A022BE758C00FD57D0 /* AKE Objective-C */,
+				BE66E4B822BE758D00FD57D0 /* AKE Objective-CTests */,
+				BE66E4C322BE758D00FD57D0 /* AKE Objective-CUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE66E49F22BE758C00FD57D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE66E4B122BE758D00FD57D0 /* LaunchScreen.storyboard in Resources */,
+				BE66E4AE22BE758D00FD57D0 /* Assets.xcassets in Resources */,
+				BE66E4AC22BE758C00FD57D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66E4B722BE758D00FD57D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66E4C222BE758D00FD57D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE66E49D22BE758C00FD57D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE459D22230A88B0003D0D76 /* AKEAVQueue.m in Sources */,
+				BE06FF9123092E1A00446B44 /* AKEVideoEncoder.m in Sources */,
+				BE0A6CAC2312926E005E9251 /* AKETimestampManager.m in Sources */,
+				BE66E4A922BE758C00FD57D0 /* ViewController.m in Sources */,
+				BE459D25230B8EC5003D0D76 /* AKEAudioEncoder.m in Sources */,
+				BE66E4B422BE758D00FD57D0 /* main.m in Sources */,
+				BE66E4DB22BE843400FD57D0 /* AKEPreviewView.m in Sources */,
+				BE06FF94230939F700446B44 /* AKERTMPSender.m in Sources */,
+				BE459D1F230A86CB003D0D76 /* AKEAVPacket.m in Sources */,
+				BE459D28230B982C003D0D76 /* AKEAudioCapture.m in Sources */,
+				BE44BC2D230A4C750084B044 /* AKEData.m in Sources */,
+				BE66E4A622BE758C00FD57D0 /* AppDelegate.m in Sources */,
+				BE66E4D822BE831D00FD57D0 /* AKEVideoCapure.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66E4B522BE758D00FD57D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE66E4BE22BE758D00FD57D0 /* AKE_Objective_CTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66E4C022BE758D00FD57D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE66E4C922BE758D00FD57D0 /* AKE_Objective_CUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE66E4BB22BE758D00FD57D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE66E4A022BE758C00FD57D0 /* AKE Objective-C */;
+			targetProxy = BE66E4BA22BE758D00FD57D0 /* PBXContainerItemProxy */;
+		};
+		BE66E4C622BE758D00FD57D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE66E4A022BE758C00FD57D0 /* AKE Objective-C */;
+			targetProxy = BE66E4C522BE758D00FD57D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE66E4AA22BE758C00FD57D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE66E4AB22BE758C00FD57D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE66E4AF22BE758D00FD57D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE66E4B022BE758D00FD57D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE66E4CB22BE758D00FD57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../3rdparty/openssl/include/",
+					"$(PROJECT_DIR)/../3rdparty/librtmp/include/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../3rdparty/openssl/lib",
+					"$(PROJECT_DIR)/../3rdparty/librtmp/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE66E4CC22BE758D00FD57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../3rdparty/openssl/include/",
+					"$(PROJECT_DIR)/../3rdparty/librtmp/include/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../3rdparty/openssl/lib",
+					"$(PROJECT_DIR)/../3rdparty/librtmp/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE66E4CE22BE758D00FD57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25LU5QH568;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = "AKE Objective-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "akanchi.AKE-Objective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE66E4CF22BE758D00FD57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25LU5QH568;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = "AKE Objective-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "akanchi.AKE-Objective-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE66E4D122BE758D00FD57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AKE Objective-CTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "akanchi.AKE-Objective-CTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKE Objective-C.app/AKE Objective-C";
+			};
+			name = Debug;
+		};
+		BE66E4D222BE758D00FD57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AKE Objective-CTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "akanchi.AKE-Objective-CTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKE Objective-C.app/AKE Objective-C";
+			};
+			name = Release;
+		};
+		BE66E4D422BE758D00FD57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AKE Objective-CUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "akanchi.AKE-Objective-CUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AKE Objective-C";
+			};
+			name = Debug;
+		};
+		BE66E4D522BE758D00FD57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AKE Objective-CUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "akanchi.AKE-Objective-CUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AKE Objective-C";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE66E49C22BE758C00FD57D0 /* Build configuration list for PBXProject "AKE Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE66E4CB22BE758D00FD57D0 /* Debug */,
+				BE66E4CC22BE758D00FD57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE66E4CD22BE758D00FD57D0 /* Build configuration list for PBXNativeTarget "AKE Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE66E4CE22BE758D00FD57D0 /* Debug */,
+				BE66E4CF22BE758D00FD57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE66E4D022BE758D00FD57D0 /* Build configuration list for PBXNativeTarget "AKE Objective-CTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE66E4D122BE758D00FD57D0 /* Debug */,
+				BE66E4D222BE758D00FD57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE66E4D322BE758D00FD57D0 /* Build configuration list for PBXNativeTarget "AKE Objective-CUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE66E4D422BE758D00FD57D0 /* Debug */,
+				BE66E4D522BE758D00FD57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE66E49922BE758C00FD57D0 /* Project object */;
+}
